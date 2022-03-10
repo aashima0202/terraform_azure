@@ -1,3 +1,3 @@
-variable "rg_dev1" {
+variable "rg_dev" {
   default       = "rg_aashima_dev"
 }
