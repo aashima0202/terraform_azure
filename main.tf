@@ -17,7 +17,7 @@ resource "azurerm_resource_group" "aashima_dev" {
   
 }
 resource "azurerm_app_service_plan" "tstapp" {
-    name="rg_"
+    name="apsrv_aashima"
     resource_group_name= azurerm_resource_group.aashima_dev.name
     location= azurerm_resource_group.aashima_dev.location 
     sku{
@@ -32,7 +32,7 @@ resource "azurerm_resource_group" "aashima_qa" {
   
 }
 resource "azurerm_app_service_plan" "tstapp1" {
-    name="rg_"
+    name="ap_srv_aashima"
     resource_group_name= azurerm_resource_group.aashima_qa.name
     location= azurerm_resource_group.aashima_qa.location
     sku{
